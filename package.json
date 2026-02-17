@@ -1,0 +1,15 @@
+{
+  "name": "bellcorp-expense-tracker",
+  "version": "1.0.0",
+  "description": "Bellcorp Personal Expense Tracker - Full Stack MERN Application",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
