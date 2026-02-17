@@ -28,8 +28,7 @@ const PERIOD_OPTIONS = [
 
 const Dashboard = () => {
   const { user } = useAuth();
-  const { addTransaction, fetchTransactions } = useTransactions();
-
+  const { addTransaction } = useTransactions();
   const [summaryData, setSummaryData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [period, setPeriod] = useState('month');

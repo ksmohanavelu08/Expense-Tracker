@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTransactions } from '../context/TransactionContext';
 import {
@@ -13,7 +12,6 @@ import './Explorer.css';
 
 const Explorer = () => {
   const { user } = useAuth();
-  const navigate = useNavigate();
   const {
     transactions, pagination, loading, filters,
     fetchTransactions, loadMore, updateFilters,
